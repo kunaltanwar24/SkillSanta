@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Assignment-1</title>
+</head>
+<body>
+	<p>
+        Write a JavaScript function to truncate a string to a certain number of
+        words.<br><br>
+        See Ans in Console
+	</p>
+	
+	
+	<script>
+	function tcate(str, no_words) {
+    return str.split(" ").splice(0,no_words).join(" ");
+}
+
+console.log(tcate('The quick brown fox jumps over the lazy dog', 4));
+
+	</script>
+	
+  
+</body>
+</html>

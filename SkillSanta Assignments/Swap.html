@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Assignment-1</title>
+</head>
+<body>
+	<p>
+		Write a JavaScript function that takes a string which has lower and upper
+		case letters as a parameter and converts upper case letters to lower case,
+		and lower case letters to upper case.<br><br> Ans in Console
+	</p>
+	
+	
+	<script>
+		swap = function swap(str) {
+        return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, chr) {
+            return chr ? match.toUpperCase() : match.toLowerCase();
+        });
+    }
+console.log(swap('KuNaL TanwAr'));
+
+		
+	</script>
+  
+</body>
+</html>
