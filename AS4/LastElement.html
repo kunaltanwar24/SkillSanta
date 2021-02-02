@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get last and last n elements of an array</title>
+</head>
+<body>
+    <script>
+                var last =  function(array, n) {
+        if (array == null) 
+            return void 0;
+        if (n == null) 
+            return array[array.length - 1];
+        return array.slice(Math.max(array.length - n, 0));  
+        };
+
+        document.write(last([7, 9, 8, 2, -3, -4])); 
+        document.write("<br>" + last([8, -3, 4, -2, -10],4));  
+        document.write("<br>" +last([7, -6, 0, -2, 5],7));
+
+    </script>
+</body>
+</html>
+

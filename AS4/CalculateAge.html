@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculateAge</title>
+</head>
+<body>
+    <script>
+        
+    var dob = new Date("06/24/1995");  
+      
+    var month_diff = Date.now() - dob.getTime();  
+      
+    
+    var age_dt = new Date(month_diff);   
+      
+         
+    var year = age_dt.getUTCFullYear();  
+      
+      
+    var age = Math.abs(year - 1970);  
+      
+      
+    document.write("Age : " + age + " years <br>"); 
+    if(age > 13 && age < 25) {
+            document.write("Elegible")
+    }else{
+        document.write("Not Eligible")
+    }
+
+    </script>
+</body>
+</html>

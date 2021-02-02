@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greatest common divisor (GCD) of two positive integers.</title>
+</head>
+<body>
+    <script>
+        var a = 16; 
+        var b = 408;   
+        var gcd;
+        while (a!=b)
+        {
+            if (a>b)
+            {
+                a = a -b;
+            }
+            else
+            {
+                b = b - a;
+            }
+        }
+        gcd = a;
+        document.write(gcd);
+
+    </script>
+</body>
+</html>
